@@ -42,6 +42,7 @@ window.addEventListener("load", function() {
                   fuelStatus.innerHTML='Fuel level is high enough for launch';
                   cargoStatus. innerHTML='Cargo mass is too much to launch'
                   status.style.color ="red";
+                  cargoStatus.style.color="red"
 
             }else if((Number(fuelLevelInput.value)) < 10000 && (Number(cargoMassInput.value)) <= 10000) {
                   listItems.style.visibility = "visible";     
@@ -53,6 +54,8 @@ window.addEventListener("load", function() {
                   fuelStatus.innerHTML='Fuel level is too low enough for launch';
                   cargoStatus.innerHTML='Cargo mass is good enough for  launch'
                   status.style.color ="red";
+                  fuelStatus.style.color="red"
+
 
             }else if((Number(fuelLevelInput.value) < 10000) && (Number(cargoMassInput.value)) > 10000) {
                   listItems.style.visibility = "visible";     
@@ -64,11 +67,16 @@ window.addEventListener("load", function() {
                   fuelStatus.innerHTML='Fuel level is high enough for launch';
                   cargoStatus.innerHTML='Cargo mass is too much for launch';
                   status.style.color ="red";
+                  cargoStatus.style.color="red"
             }else{
                status.innerHTML="Shuttle is ready for Launch";             
                fuelStatus.innerHTML='Fuel level is high enough for launch';
                cargoStatus. innerHTML='Cargo mass is low enough for  launch'
                status.style.color ="green";
+               fuelStatus.style.color="green"
+               cargoStatus.style.color="green"
+
+
 
             }
 
